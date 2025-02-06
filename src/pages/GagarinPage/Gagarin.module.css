@@ -1,0 +1,9 @@
+.image_container {
+  background-color: var(--midnight-200);
+  width: 450px;
+  height: 600px;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}

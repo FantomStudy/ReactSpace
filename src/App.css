@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@font-face {
+  font-family: anomaly;
+  src: url("../public/fonts/TjfAnomalyRegular.ttf");
+}
+* {
+  margin: 0;
+  font-family: "Rubik", serif;
+  color: var(--midnight-950);
+  --midnight-950: #031230;
+  --midnight-900: #0a42a5;
+  --midnight-800: #0049d5;
+  --midnight-700: #0058ff;
+  --midnight-600: #0054ff;
+  --midnight-500: #2581ff;
+  --midnight-400: #4da8ff;
+  --midnight-300: #7fceff;
+  --midnight-200: #afe4ff;
+  --midnight-100: #d2f2ff;
+  --midnight-50: #e7f8ff;
+}
+a:hover {
+  display: inline-block;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.button {
+  display: flex;
+  align-items: center;
+  grid-gap: 6px;
+  justify-content: center;
+  text-decoration: none;
+  scale: 1;
+  font-size: 16px;
+  padding: 10px 20px;
+  color: white;
+  background-color: var(--midnight-500);
+  border: none;
+  border-radius: 12px;
+  transition: ease-in-out 0.05s scale, ease-in-out 0.1s background-color;
+}
+.button:hover {
+  scale: 0.95;
+  background-color: var(--midnight-600);
+}
+.button.button_danger {
+  background-color: red;
+}
+input.input {
+  border-radius: 12px;
+  border: 1px solid var(--midnight-300);
+  font-size: 16px;
+  padding: 8px 10px;
+}
+input.input.input_danger {
+  border: 2px solid red !important;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px var(--midnight-100) inset !important;
+}
+a:not([class]) {
+  color: var(--midnight-800);
+  text-decoration: none;
+}
