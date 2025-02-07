@@ -2,8 +2,10 @@ import React, { useEffect, useState } from "react";
 import styles from "./Gagarin.module.css";
 import Header from "../../components/Header/Header";
 import { gagarinFlight } from "../../API/requests";
+import { useNavigate } from "react-router";
 
 export default function GagarinPage() {
+  const navigate = useNavigate();
   const [data, setData] = useState({
     mission: {
       name: "",
@@ -72,6 +74,9 @@ export default function GagarinPage() {
       <div className="container">
         <div className={styles.wrapper}>
           <div className={styles.main_text}>
+            <button className="button" onClick={navigate("/lunar-missions")}>
+              К миссиям
+            </button>
             <h1>Миссия: {data.mission.name}</h1>
 
             <p className={styles.subtitle}>
